@@ -5,7 +5,7 @@
 
   <groupId>com.aem</groupId>
   <artifactId>testing-jenkins-git</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <name>testing-jenkins-git</name>
   <description>A simple testing-jenkins-git.</description>
@@ -88,7 +88,7 @@
   
   <scm>		
 	<connection>scm:git:https://github.com/nandkishore-patidar/testing-jenkins-git.git</connection>	   
-    <tag>testing-jenkins-git-1.0.0</tag>
+    <tag>testing-jenkins-git-1.0.1</tag>
   </scm>
   
 </project>
