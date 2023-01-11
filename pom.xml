@@ -17,14 +17,14 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-  
+  <!--
    <distributionManagement>
     <repository>
       <id>aem-local</id>
       <name>AEM local Repository</name>
       <url>http://localhost:8082/artifactory/nandkishorepatidar/</url>
     </repository>   
-  </distributionManagement>
+  </distributionManagement> -->
 
   <dependencies>
     <dependency>
@@ -85,10 +85,10 @@
       </plugin>
     </plugins>
   </reporting>
-  
+ <!-- 
   <scm>		
 	<connection>scm:git:https://github.com/nandkishore-patidar/testing-jenkins-git.git</connection>	   
     <tag>testing-jenkins-git-1.0.1</tag>
-  </scm>
+  </scm> -->
   
 </project>
