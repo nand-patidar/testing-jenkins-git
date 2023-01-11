@@ -38,44 +38,10 @@
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
 	<plugin>
-				<groupId>com.amashchenko.maven.plugin</groupId>
-				<artifactId>gitflow-maven-plugin</artifactId>
-				<version>1.6.0</version>
-
-				<configuration>
-					<installProject>false</installProject>
-					<verbose>true</verbose>
-
-					<pushRemote>true</pushRemote>
-					<keepBranch>false</keepBranch>
-					<skipFeatureVersion>true</skipFeatureVersion>
-					<gitFlowConfig>
-						<productionBranch>master</productionBranch>
-						<developmentBranch>develop</developmentBranch>
-						<featureBranchPrefix>feature/</featureBranchPrefix>
-						<releaseBranchPrefix>release/</releaseBranchPrefix>
-						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
-						<supportBranchPrefix>support/</supportBranchPrefix>
-						<versionTagPrefix></versionTagPrefix>
-						<origin>origin</origin>
-					</gitFlowConfig>
-
-					<commitMessages>
-						<featureStartMessage>update versions for feature branch</featureStartMessage>
-						<featureFinishMessage>update versions for development branch</featureFinishMessage>
-
-						<hotfixStartMessage>update versions for hotfix</hotfixStartMessage>
-						<hotfixFinishMessage>update for next development version</hotfixFinishMessage>
-
-						<releaseStartMessage>update versions for release</releaseStartMessage>
-						<releaseFinishMessage>update for next development version</releaseFinishMessage>
-
-						<tagHotfixMessage>tag hotfix</tagHotfixMessage>
-						<tagReleaseMessage>tag release</tagReleaseMessage>
-					</commitMessages>
-				</configuration>
-
-			</plugin>      
+					<groupId>com.amashchenko.maven.plugin</groupId>
+					<artifactId>gitflow-maven-plugin</artifactId>
+					<version>1.6.0</version>
+				</plugin>    
 	      
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
