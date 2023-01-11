@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.aem</groupId>
@@ -17,14 +18,6 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-  <!--
-   <distributionManagement>
-    <repository>
-      <id>aem-local</id>
-      <name>AEM local Repository</name>
-      <url>http://localhost:8082/artifactory/nandkishorepatidar/</url>
-    </repository>   
-  </distributionManagement> -->
 
   <dependencies>
     <dependency>
@@ -37,12 +30,11 @@
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
-	<plugin>
+       <plugin>
 					<groupId>com.amashchenko.maven.plugin</groupId>
 					<artifactId>gitflow-maven-plugin</artifactId>
 					<version>1.6.0</version>
-				</plugin>    
-	      
+				</plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
@@ -68,7 +60,10 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
         </plugin>
-        
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
           <version>2.5.2</version>
@@ -77,21 +72,6 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
-	      
-	  <plugin>  
-            <!-- Build an executable JAR -->  
-            <groupId>org.apache.maven.plugins</groupId>  
-            <artifactId>maven-jar-plugin</artifactId>  
-            <version>3.1.0</version>  
-            <configuration>  
-                <archive>  
-                    <manifest>  
-                        <mainClass>com.aem.testing_jenkins_git.App</mainClass>  
-                    </manifest>  
-                </archive>  
-            </configuration>  
-        </plugin>  
-	      
       </plugins>
     </pluginManagement>
   </build>
@@ -103,10 +83,4 @@
       </plugin>
     </plugins>
   </reporting>
- <!-- 
-  <scm>		
-	<connection>scm:git:https://github.com/nandkishore-patidar/testing-jenkins-git.git</connection>	   
-    <tag>testing-jenkins-git-1.0.1</tag>
-  </scm> -->
-  
 </project>
