@@ -6,7 +6,6 @@
 	<groupId>com.aem</groupId>
 	<artifactId>testing-jenkins-git</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
-
 	<name>testing-jenkins-git</name>
 	<description>A simple testing-jenkins-git.</description>
 	<!-- FIXME change it to the project's website -->
