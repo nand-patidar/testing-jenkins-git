@@ -17,20 +17,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
-	<distributionManagement>
-		<repository>
-			<id>nexus-staging</id>
-			<url>http://aem-dev-jenkins.fcc.ca:8081/repository/aem-staging/</url>
-			<uniqueVersion>false</uniqueVersion>
-			<layout>default</layout>
-		</repository>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>http://aem-dev-jenkins.fcc.ca:8081/repository/aem-snapshots/</url>
-			<layout>default</layout>
-			<uniqueVersion>true</uniqueVersion>
-		</snapshotRepository>
-	</distributionManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
