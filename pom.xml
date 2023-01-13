@@ -271,10 +271,5 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	<scm>
-		<connection>scm:git:git@bitbucket.org:farmcreditcanada/fcc-core-bundles.git</connection>
-		<developerConnection>scm:git:git@bitbucket.org:farmcreditcanada/fcc-core-bundles.git</developerConnection>
-		<url>https://bitbucket.org/farmcreditcanada/fcc-core-bundles</url>
-		<tag>release-12082017</tag>
-	</scm>
+	
 </project>
