@@ -1,27 +1,17 @@
-# This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
-# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
-
-name: Maven Package
-on:
- push:
-    branches: master
-  
-
+name: Push commit
+on: push
+permissions:
+  contents: write
 jobs:
-  build:
-
+  report:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-      issues: write
-      repository-projects: write
-
     steps:
-    - name: Create new file
-      run: echo "abcd test" > sample.txt
-      shell: bash      
-    - uses: actions/labeler@v2
-      with:
-        repo-token: ${{ secrets.ACCESS_TOKEN }} 
-
-
+      - uses: actions/checkout@v3
+      - name: Create report file
+        run: date +%s > report.txt
+      - name: Commit report
+        run: |
+          git config --global user.name 'nand-patidar'
+          git config --global user.email 'nand-patidar@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push
