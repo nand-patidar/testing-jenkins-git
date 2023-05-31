@@ -20,9 +20,8 @@ jobs:
     - name: Create new file
       run: echo "abcd test" > sample.txt
       shell: bash      
-    - name: Commit & Push changes
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: actions/labeler@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  
+        repo-token: ${{ secrets.ACCESS_TOKEN }} 
 
 
