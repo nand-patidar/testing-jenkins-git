@@ -18,8 +18,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Display the path
+    - name: Create new file
       run: echo "abcd test" > sample.txt
-      shell: bash
+      shell: bash      
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  
 
 
