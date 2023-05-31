@@ -17,7 +17,6 @@ jobs:
       packages: write
 
     steps:
-    - uses: actions/checkout@v3
     - name: Create new file
       run: echo "abcd test" > sample.txt
       shell: bash      
