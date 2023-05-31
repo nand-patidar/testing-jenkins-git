@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Create report file
-        run: date +%s > report.txt
+        run: echo "abcd test" > sample.txt
       - name: Commit report
         run: |
           git config --global user.name 'nand-patidar'
