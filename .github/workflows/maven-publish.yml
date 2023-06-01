@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
       - name: Create report file
         run: echo "abcd test" > sample.txt
       - name: Commit report
@@ -16,6 +18,5 @@ jobs:
           git add -A
           git commit -m "Automated report"
           git push
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+
+       
