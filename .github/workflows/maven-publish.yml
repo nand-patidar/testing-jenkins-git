@@ -10,7 +10,7 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
       - name: Create report file
-        run: echo "abcd test" > sample.txt
+        run: echo "test workflow" > sample.txt
       - name: Commit report
         run: |
           git config --global user.name 'nand-patidar'
