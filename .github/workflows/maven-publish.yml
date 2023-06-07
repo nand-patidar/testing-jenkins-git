@@ -3,8 +3,10 @@ on: push
 permissions:
   contents: write
 jobs:
-  report:
+  create_issue:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - uses: actions/checkout@v3
         with:
